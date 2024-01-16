@@ -8,16 +8,19 @@
     --white: #FFFFFF;
     --black: #000000;
 
-    --font: "Rubik, sans-serif";
+    --font: "Rubik", sans-serif;
     --rootsize: 20px;
     --maxsize: 1200px;
 }
 
 body {
     background-image: url("website_images/mainbackground.png");
+    background-color:var(--yellow);
     font-family: var(--font);
     font-size: var(--rootsize);
-    background-color:var(--yellow);
+    margin-top: 0;
+    padding-top: 0;
+   
    
 }
 
@@ -34,4 +37,53 @@ h2 {
 h3 {
     font-size: 1.5rem;
     font-weight: 600;
+}
+
+/* Main structure */
+#container {
+    width: 100%;
+    max-width: var(--maxsize);
+    margin: 0 auto;
+    min-height: 200px;
+    background-color: var(--white);
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 1rem;
+}
+
+#logo {
+    max-width: 15rem;
+}
+
+#carticon {
+    max-width: 3rem;
+}
+
+nav {
+    background-color: var(--red);
+}
+
+ul {
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    gap: 1rem;
+}
+
+nav a {
+    display: inline-block;
+    padding: 1rem;
+    color: var(--white);
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+nav a:hover {
+    background-color: var(--yellow);
+    color: var(--black);
+    
 }
