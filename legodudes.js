@@ -24,4 +24,8 @@ const products = [
  *     - bruk prodid som referanse for å hente tittel og pris
  * quantity: antall produkter lagt i handlekurven
  */
-let cart = []
+let cart = [
+    
+]
+
+

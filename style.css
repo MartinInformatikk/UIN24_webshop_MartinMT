@@ -98,8 +98,15 @@ header button span {
     border-bottom: 0.5rem solid var(--green);
     position: absolute;
     top: 76px;
-    right: 0;
+    right: -500px;
     padding: 1rem;
+    opacity: 0;
+    transition: ease-in-out .5s;
+}
+
+#cart.show {
+    opacity: 1;
+    right: 0;
 }
 
 #cart h2 {
